@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rose that Grew From Concrete: Tupac Shakur's Life and Legacy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+
+       .hero {
+            min-height: 150vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            padding: 8rem 2rem;
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url('tupacwallpaper.jpg') center/cover;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 2rem;
+            max-width: 1200px;
+        }
+
+        .hero-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(3rem, 10vw, 8rem);
+            line-height: 1;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #BC5325, #523673, #364973);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-description {
+            background: rgba(0, 0, 0, 0.8);
+            border: 2px solid #BC5325;
+            padding: 2rem 3rem;
+            max-width: 800px;
+            margin: 0 auto;
+            backdrop-filter: blur(10px);
+        }
+
+        .hero-description p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #ddd;
+        }
+
+
+
+
+        .section {
+            background: #000;
+            padding: 4rem 2rem;
+            border-top: 3px solid #BC5325;
+        }
+
+        .section:nth-child(even) {
+            border-top-color: #523673;
+        }
+
+        .section:nth-child(3n) {
+            border-top-color: #364973;
+        }
+
+        .section-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .text-content h2 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2.5rem;
+            color: #BC5325;
+            margin-bottom: 1rem;
+        }
+
+        .section:nth-child(even) .text-content h2 {
+            color: #523673;
+        }
+
+        .section:nth-child(3n) .text-content h2 {
+            color: #364973;
+        }
+
+        .subtitle {
+            font-size: 0.9rem;
+            color: #999;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+
+        .quote {
+            font-size: 1.3rem;
+            line-height: 1.6;
+            color: #ddd;
+            padding-left: 1.5rem;
+            border-left: 4px solid #BC5325;
+        }
+
+        .section:nth-child(even) .quote {
+            border-left-color: #523673;
+        }
+
+        .section:nth-child(3n) .quote {
+            border-left-color: #364973;
+        }
+
+        .description {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #ccc;
+            margin-bottom: 1.5rem;
+        }
+
+        .quote-italic {
+            font-style: italic;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #aaa;
+            margin-top: 1.5rem;
+        }
+
+        footer {
+            background: #000;
+            text-align: center;
+            padding: 3rem 2rem;
+            border-top: 3px solid #BC5325;
+            font-size: 0.95rem;
+            color: #999;
+        }
+
+        footer strong {
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            .section-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .hero-title {
+                font-size: 3rem;
+            }
+
+            .text-content h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="hero-bg"></div>
+         <div class="hero-content">
+            <h1 class="hero-title">The Rose that Grew From Concrete</h1>
+            <p style="font-size: 1.5rem; color: #ddd; font-weight: 600; margin-bottom: 8rem;">Tupac Shakur's Life and Legacy</p>
+            <div class="hero-description">
+                <p>Explore the influence of Tupac Shakur, a poet, activist, and West Coast rapper, on the American Dream. Growing up in gang communities and poverty, Tupac inspired others to make change by drawing from his own life story and dedicating himself to rapping about the truth. Listen to his most powerful tracks and symbolic lyrics about oppression, discrimination, and social issues.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="section-content">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/CON6jfomcUA?si=tLczcF_oPGYAJU2a" allowfullscreen></iframe>
+            </div>
+            <div class="text-content">
+                <h2>Interview Archive</h2>
+                <p class="subtitle">1994 • MTV Interview</p>
+                  <blockquote class="quote" style="margin-bottom: 1.5rem">
+                    
+“I’m not saying I’m gonna ... change the world, but I guarantee that I will spark the brain that will change the world”
+
+                </blockquote>
+                <p class="description">
+                    In 1994, two year before his passing, Tupac Shakur sat down for an MTV interview in which he criticized other rappers and black artists for "leeching off the Ghetto", suggesting that many successful people were moving away from their difficult upbringings. In an inspirational message, he urged others to make change by understanding the importance of their words and actions as leaders. 
+                </p>
+              
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-content">
+            <div class="text-content">
+                <h2>Keep Ya Head Up</h2>
+                <p class="subtitle">1993 • Strictly 4 My N.I.G.G.A.Z...</p>
+                <p class="description">
+                   Listen to this feminist anthem written by 2Pac, one of the first songs in gangsta culture to reference pro-choice politics and rape culture. It influenced the next generation of black music, demonstrating Shakur’s dedication to rapping about the truth, society, and real problems.
+                </p>
+                <p class="quote-italic">
+                    “I think the shit that I say, no one else says. Who was writing about Black women before ‘Keep Ya Head Up?’ Now everybody got a song about Black women. Who was writing about that when I was writing about that? Who was writing about their own problems?”
+                </p>
+            </div>
+            <div class="video-container">
+                <audio controls style="width: 100%; height: 50px; background: #111; border-radius: 8px;">
+    <source src="keep-ya-head-up.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+<div style="max-width: 250px; margin: 2rem auto 0; text-align: center;">
+            <img src="keepyaheadup.webp" alt="Rose growing from concrete" style="width: 100%">
+        </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-content">
+            <div class="video-container">
+               <audio controls style="width: 100%; height: 50px; background: #111; border-radius: 8px;">
+    <source src="the-rose-that-grew-from-concrete.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    
+</audio>
+<div style="max-width: 500px; margin: 2rem auto 0; text-align: center;">
+            <img src="therose.jpg" alt="Rose growing from concrete" style="width: 100%">
+        </div>
+            </div>
+            <div class="text-content">
+                <h2>The Rose That Grew From Concrete</h2>
+                <p class="subtitle">1999 • Poetry Collection</p>
+  <p class="description">
+        Shakur wrote a collection of poetry between 1989 and 1991 that was posthumously released in 1999 by MTV Books. The collection's cover poem is a testament to the resilience of those in poverty and the ability to rise out of oppression. Listen to this artist's rendition of <i>The Rose That Grew from Concrete</i>.
+    </p>
+              <blockquote class="quote" style="margin-bottom: 1.5rem">
+                    “You see you wouldn't ask why the rose that grew from the concrete had damaged petals. On the contrary, we would all celebrate its tenacity. We would all love its will to reach the sun”
+                </blockquote>
+                <p class="quote-italic">
+                    How does this metaphor for overcoming opression reflect Shakur's own life story?
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+     <section class="section">
+        <div class="section-content">
+            
+            <div class="text-content">
+                <h2>Changes ft. Talent</h2>
+                <p class="subtitle">1998 • Greatest Hits</p>
+
+               <p class="description">
+            One of the greatest rap songs of all time, and the only song to be posthumously nominated for Best Rap Solo Performance, <i>Changes</i> was recorded in 1992 and remixed featuring Talent, an R&B trio from Kansas City. The song highlights the uncomfortable realities of the world, seeking to explain why things are the way they are. Why do drug dealers sell to kids? Why is there violence in the streets? Tupac answers, "that's the way it is." 
+            </p>
+            <div style="background: rgba(188, 83, 37, 0.1); border-left: 4px solid #BC5325; padding: 2rem 3rem; text-align: left; border-radius: 4px; height: 350px; overflow-y: auto;">
+                <p style="font-size: 1.2rem; line-height: 2; color: #ddd; font-style: italic;">
+                     I see no changes, wake up in the morning and I ask myself<br>
+Is life worth livin'? Should I blast myself?<br>
+I'm tired of bein' poor and, even worse, I'm black<br>
+My stomach hurts so I'm lookin' for a purse to snatch<br>
+Cops give a damn about a negro<br>
+Pull the trigger, kill a n***a, he's a hero<br>
+"Give the crack to the kids, who the hell cares?<br>
+One less hungry mouth on the welfare"<br>
+First ship 'em dope and let 'em deal to brothers<br>
+Give 'em guns, step back, watch 'em kill each other<br>
+"It's time to fight back," that's what Huey said<br>
+Two shots in the dark, now Huey's dead<br>
+I got love for my brother<br>
+But we can never go nowhere unless we share with each other<br>
+We gotta start makin' changes
+                </p>
+            </div>
+            </div>
+
+<div class="video-container">
+               <audio controls style="width: 100%; height: 50px; background: #111; border-radius: 8px;">
+    <source src="changes.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    
+</audio>
+<div style="max-width: 250px; margin: 2rem auto 0; text-align: center;">
+            <img src="changes.jpg" style="width: 300px">
+        </div>
+            </div>
+
+
+        </div>
+    </section>
+
+      <section class="section">
+        <div class="section-content">
+            <div class="video-container">
+              <audio controls style="width: 100%; height: 50px; background: #111; border-radius: 8px;">
+    <source src="trapped.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    
+</audio>
+<div style="max-width: 500px; margin: 2rem auto 0; text-align: center;">
+            <img src="trapped.webp" alt="Rose growing from concrete" style="width: 250px">
+        </div>
+
+            </div>
+            <div class="text-content">
+                <h2>Trapped</h2>
+                <p class="subtitle">1991 • 2Pacalypse Now</p>
+  <p class="description">
+Shakur’s worldview emerges early in his career: he argues that Black men are pressured by peers, the law, and society’s refusal to help them, making violence a justified response. His belief in violence as a transformative power made him a controversial figure, but Shakur persisted in this cynical view of society.</p>
+              <blockquote class="quote" style="margin-bottom: 1.5rem">
+They got me trapped, can barely walk the city streets <br> 
+Without a cop harasskin' me, searching me, then askin' my identity <br>
+Hands up, throw me up against the wall, didn't do a thing at all <br>
+I'm telling you one day these suckers gotta fall
+            </div>
+        </div>
+    </section>
+    
+
+    <footer>
+        <p><strong>Curated by Ari Yamashita</strong> • 2026</p>
+        <p style="margin-top: 0.5rem ">Part of <i>The Legacy of Zora Neale Hurston in the American Imagination</i></p>
+    </footer>
+</body>
+</html>
